@@ -95,7 +95,7 @@ export default function Header() {
                   Sign Up
                 </a>
               </div>
-              <div className="me-5 flex-shrink-0 d-lg-none d-lg-block d-sm-block">
+              <div className="me-5 flex-shrink-0 d-lg-none d-lg-block">
                 <a
                   className="btn nav-btn btn-primary"
                   onClick={() => navigate("/sign-up")}

@@ -57,51 +57,45 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-            <div className="d-flex align-items-center gap-2">
-              <div class="dropdown">
-                <a
-                  className="text-light btn-primary btn  nav-btn dropdown-toggle "
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <IoLanguageSharp style={{ textAlign: "center" }} />{" "}
-                </a>
+            <div>
+              <div className="d-flex align-items-center gap-2">
+                <div class="dropdown">
+                  <a
+                    className="text-light btn-primary btn  nav-btn dropdown-toggle "
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <IoLanguageSharp style={{ textAlign: "center" }} />{" "}
+                  </a>
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Russian
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      English
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Uzbek
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="me-5 flex-shrink-0 d-none d-lg-block">
-                <a
-                  className="btn nav-btn btn-primary"
-                  onClick={() => navigate("/sign-up")}
-                >
-                  Sign Up
-                </a>
-              </div>
-              <div className="me-5 flex-shrink-0 d-lg-none d-lg-block d-sm-block">
-                <a
-                  className="btn nav-btn btn-primary"
-                  onClick={() => navigate("/sign-up")}
-                >
-                  Sign Up
-                </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Russian
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        English
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Uzbek
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="me-5 flex-shrink-0 d-none d-lg-block">
+                  <a
+                    className="btn nav-btn btn-primary"
+                    onClick={() => navigate("/sign-up")}
+                  >
+                    Sign Up
+                  </a>
+                </div>
               </div>
             </div>
           </div>

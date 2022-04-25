@@ -58,6 +58,10 @@ export default function Header() {
               </li>
             </ul>
             <div className="d-flex align-items-center gap-2">
+              {/* <button className="text-light btn-primary btn  nav-btn ">
+                {" "}
+                <IoLanguageSharp style={{ textAlign: "center" }} />{" "}
+              </button> */}
               <div class="dropdown">
                 <a
                   className="text-light btn-primary btn  nav-btn dropdown-toggle "
@@ -88,14 +92,6 @@ export default function Header() {
                 </ul>
               </div>
               <div className="me-5 flex-shrink-0 d-none d-lg-block">
-                <a
-                  className="btn nav-btn btn-primary"
-                  onClick={() => navigate("/sign-up")}
-                >
-                  Sign Up
-                </a>
-              </div>
-              <div className="me-5 flex-shrink-0 d-lg-none d-lg-block d-sm-block">
                 <a
                   className="btn nav-btn btn-primary"
                   onClick={() => navigate("/sign-up")}
