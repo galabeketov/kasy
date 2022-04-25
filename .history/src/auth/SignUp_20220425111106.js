@@ -19,7 +19,7 @@ export default function SignUp() {
   return (
     <div className="container w-100 auth-wrapper d-flex align-items-center justify-content-center py-5">
       <div>
-        <h1 className="text-center">Sign Up</h1>
+        <h1 className="text-center">Sign in</h1>
         <form className="row mt-5" onSubmit={handleSubmit(onSubmit)}>
           <div className="col-lg-12 col-md-10 col-sm-8 col-xs-6">
             <div>
