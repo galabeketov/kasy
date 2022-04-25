@@ -1,0 +1,126 @@
+//
+// components.scss
+//
+
+.btn {
+  padding: 13px 36px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  position: relative;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// @each $color, $value in $theme-colors {
+//   .btn-dark {
+//     background: #{$value};
+//     border-color: #{$value} !important;
+//     &:hover,
+//     &:focus,
+//     &:active,
+//     &.active,
+//     &.focus,
+//     &:not(:disabled):not(.disabled):active,
+//     &:not(:disabled):not(.disabled):active:focus,
+//     .open > .dropdown-toggle.btn-primary {
+//       background: darken($value, 4%);
+//       border-color: darken($value, 4%);
+//       box-shadow: 0px 8px 20px -6px rgba($value, 0.6);
+//       transform: translateY(-6px);
+//     }
+//   }
+//   .btn-outline-#{$color} {
+//     color: #{$value};
+//     border-color: #{$value};
+//     &:hover,
+//     &:focus,
+//     &:active,
+//     &.active,
+//     &.focus,
+//     &:not(:disabled):not(.disabled):active,
+//     &:not(:disabled):not(.disabled):active:focus,
+//     .open > .dropdown-toggle.btn-primary {
+//       background: $value;
+//       border-color: $value;
+//       box-shadow: 0px 8px 20px -6px rgba($value, 0.6);
+//       transform: translateY(-6px);
+//     }
+//   }
+// }
+
+.btn-outline-dark {
+  color: #1a3365;
+  border-color: #1a3365;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &.focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  .open > .dropdown-toggle.btn-primary {
+    background: #1a3365;
+    border-color: #1a3365;
+    box-shadow: 0px 8px 20px -6px rgba(#1a3365, 0.6);
+    transform: translateY(-6px);
+  }
+}
+
+.btn-outline-primary {
+  color: #0ea6e9;
+  border-color: #0ea6e9;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &.focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  .open > .dropdown-toggle.btn-primary {
+    background: #0ea6e9;
+    border-color: #0ea6e9;
+    box-shadow: 0px 8px 20px -6px rgba(#0ea6e9, 0.6);
+    transform: translateY(-6px);
+  }
+}
+
+.btn-primary {
+  background: #{$value};
+  border-color: #{$value} !important;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  &.focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active:focus,
+  .open > .dropdown-toggle.btn-primary {
+    background: darken($value, 4%);
+    border-color: darken($value, 4%);
+    box-shadow: 0px 8px 20px -6px rgba($value, 0.6);
+    transform: translateY(-6px);
+  }
+
+.btn {
+  &.btn-outline-white,
+  &.btn-outline-light {
+    &:focus,
+    &:active,
+    &:hover,
+    &.active {
+      color: #1a3365;
+    }
+  }
+  &.btn-outline-primary,
+  &.btn-outline-dark,
+  &.btn-outline-success {
+    &:focus,
+    &:active,
+    &:hover,
+    &.active {
+      color: #ffffff !important;
+    }
+  }
+}
